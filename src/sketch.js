@@ -11,9 +11,9 @@ function preload() {
 
 
 function setup() {
-  //createCanvas(windowWidth, windowHeight);
-  let c = createCanvas(1920,1080);
-  c.position(windowWidth/2-width/2,windowHeight/2-height/2);
+  createCanvas(windowWidth, windowHeight);
+  //let c = createCanvas(1920,1080);
+  //c.position(windowWidth/2-width/2,windowHeight/2-height/2);
 
   noFill();
 
