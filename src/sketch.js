@@ -37,11 +37,11 @@ function setup() {
 }
 
 function draw() {
-  background(100);
+  background(0);
   let spectrum = fft.analyze();
   let level = mic.getLevel();
   level = map(level, 0, 1, 0.6, 3);
-  clevel += (level-clevel)/20;
+  clevel += (level-clevel)/12;
   translate(width/2,height/2)
   scale(clevel);
 
