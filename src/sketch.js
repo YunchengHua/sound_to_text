@@ -55,7 +55,7 @@ function draw() {
   let limit = 0.8
   console.log(level)
   if(level > limit && dist(shift_vel.x,shift_vel.y,0,0) < 8){
-    if(shift_vel.x == 0 && shift_vel.y == 0){
+    if(dist(shift_vel.x,shift_vel.y,0,0) < 2){
       let a = random(TWO_PI)
       shift_vel.x = cos(a)
       shift_vel.y = sin(a)
@@ -63,7 +63,7 @@ function draw() {
     shift_vel.mult(2)
   }else{
     shift_vel.mult(0.99)
-    if(dist(shift_vel.x,shift_vel.y,0,0) < 1){
+    if(dist(shift_vel.x,shift_vel.y,0,0) < 0.5){
       shift_vel = createVector(0,0);
     }
   }
