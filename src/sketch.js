@@ -1,7 +1,7 @@
 let mic, fft;
 let points = [];
 let font;
-let words = "ASMR"
+let words = "A S M R"
 let pos;
 let shift_pos;
 let shift_vel;
